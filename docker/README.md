@@ -1,6 +1,3 @@
-# Following documentation for What my ip app
-
-
 ## Requirements
 1. Python3
 2. Flask library 
