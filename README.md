@@ -1,4 +1,4 @@
-## Securonix App demo
+# Securonix App demo
 
 ### Requirements of the App
 
@@ -39,7 +39,7 @@ autoscaling:
 * prod: https://securonix-prod.devopslearn.net/
 
 
-# CI/CD Process that was Implemented
+# CI/CD Process Implemented
 
 ## Continous Integration Process
 Application was build using Jenkins for CI
