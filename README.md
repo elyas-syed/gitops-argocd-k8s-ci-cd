@@ -11,16 +11,41 @@ Given the attached app.py, please do the following:
 
 1. Created Dockerfile for the Python applicaiton
 2. Tested to make sure app is working properly
-3. Create Helm Chart for the Application
-4. Modified the values.yaml file to customize the App Details
-5. Added Ingress and tls capabilities in value.yaml file so app can recieve a tls certificate
+3. Created Helm Charts for the Application - Helm Charts are Package Managers for Kubernetes
+4. Modified the values.yaml file in Helm Chart to customize the Application parameters
+5. Added Ingress and tls capabilities in values.yaml file so app can recieve a tls certificate for http/https
 6. Deployed on Kubernetes Cluster as Deployment with 3 Pods for high availability 
-7. Created Separate dev, qa, stage, and prod version of the app with it's own domain name
+```
+replicaCount: 3
+```
+7. Also enabled Horizontal Pod Autoscaler which allows the Pods to scale from 1 to 100 if load reaches 80%
+```
+autoscaling:
+  enabled: true
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+```  
 
+8. Created Separate dev, qa, stage, and prod version of the app with it's own domain name
+
+* dev: https://securonix-dev.devopslearn.net/
+
+* qa: https://securonix-qa.devopslearn.net/
+
+* stage: https://securonix-stage.devopslearn.net/
+
+* prod: https://securonix-prod.devopslearn.net/
 
 
 ### Tree structure of Directory
 ```
+├
+├── application.yaml
+├── argocd
+│   ├── deployment.yaml
+│   └── service.yaml
 ├── docker
 │   ├── app.py
 │   ├── Dockerfile
