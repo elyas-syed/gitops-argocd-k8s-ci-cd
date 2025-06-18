@@ -1,4 +1,4 @@
-# Securonix App demo
+# Secure_App demo
 
 ### Requirements of the App
 
