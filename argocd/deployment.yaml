@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: securon-cicd
+spec:
+  selector:
+    matchLabels:
+      app: securon-cicd
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: securon-cicd
+    spec:
+      containers:
+      - name: securon-cicd
+        image: elyas09/secure-demo:v2
+        ports:
+        - containerPort: 5000
+

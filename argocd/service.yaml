@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: securon-cicd-service
+spec:
+  selector:
+    app: securon-cicd
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 5000
+  
+
