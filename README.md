@@ -14,7 +14,7 @@ Given the attached app.py, please do the following:
 3. Created Helm Charts for the Application - Helm Charts are Package Managers for Kubernetes
 4. Modified the values.yaml file in Helm Chart to customize the Application parameters
 5. Added Ingress and tls capabilities in values.yaml file so app can recieve a tls certificate for http/https
-6. Deployed on Kubernetes Cluster as Deployment with 3 Pods for high availability 
+6. Deployed application on Google Cloud GKE Kubernetes Cluster as Deployment with 3 Pods for high availability 
 ```
 replicaCount: 3
 ```
@@ -37,6 +37,22 @@ autoscaling:
 * stage: https://securonix-stage.devopslearn.net/
 
 * prod: https://securonix-prod.devopslearn.net/
+
+
+## CI/CD Process that was Implemented
+
+### CI Process
+Application was build using Jenkins for CI
+* A Jenkins job was run to build the image
+* It went through Sonarqube for static analyis of code
+* Once the unit test was successful the artifact was pushed to docker repository
+
+### CD Process
+For CD Process ArgoCD was used to deploy the application on Kubernetes
+* ArgoCD uses GitOps and uses the git repository as a source of truth and constantly syncs the current state wtih desired state of infrastructure
+* Application was deployed with multiple pods for high availability 
+* To automate this process a multi-branch pipeline can be created that will ArgoCD to pull from git repository and deploy to multiple enviornments
+
 
 
 ### Tree structure of Directory
@@ -66,3 +82,5 @@ autoscaling:
 │   │       └── test-connection.yaml
 │   └── values.yaml
 ```
+
+## CI/CD Process that was Implemented
