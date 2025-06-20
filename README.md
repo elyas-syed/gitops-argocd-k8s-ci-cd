@@ -47,7 +47,8 @@ Application was build using Jenkins for CI
 * It went through Sonarqube for static analyis of code
 * Once the unit test was successful the artifact was pushed to docker repository
 
-![image](https://user-images.githubusercontent.com/84156957/154834413-5841258e-6c4d-4dd9-a641-5e88e1cb46b0.png)
+<img width="647" alt="jenkins" src="https://user-images.githubusercontent.com/84156957/154834413-5841258e-6c4d-4dd9-a641-5e88e1cb46b0.png">
+
 
 ## Continous Delivery/Continous Deplopyment Process
 ### For CD Process ArgoCD was used to deploy the application on Kubernetes
