@@ -30,13 +30,13 @@ autoscaling:
 
 8. Created Separate dev, qa, stage, and prod version of the app with it's own domain name
 
-* dev: https://securonix-dev.devopslearn.net/
+* dev: https://securon-dev.url.net/
 
-* qa: https://securonix-qa.devopslearn.net/
+* qa: https://securon-qa.url.net/
 
-* stage: https://securonix-stage.devopslearn.net/
+* stage: https://securon-stage.url.net/
 
-* prod: https://securonix-prod.devopslearn.net/
+* prod: https://securon-prod.url.net/
 
 
 # CI/CD Process Implemented
