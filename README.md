@@ -64,7 +64,8 @@ Application was build using Jenkins for CI
 
 ## Overview of ArgoCD Deployment on Kubernetes 
 
-<img width="642" alt="Screen Shot 2022-02-15 at 6 33 04 PM" src="https://user-images.githubusercontent.com/84156957/154834441-aa1abd29-c5f9-4ad9-8db4-fc6f805c31d0.png">
+<img width="1025" alt="Screen Shot 2022-02-20 at 2 43 32 AM" src="https://user-images.githubusercontent.com/84156957/154835090-b59563c4-91ea-4ae2-8398-ff1327bd7535.png">
+
 
 ## Summary
 * Google Cloud GKE Clusters were used to minimize the cost
