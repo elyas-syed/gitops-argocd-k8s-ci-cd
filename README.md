@@ -70,7 +70,7 @@ Application was build using Jenkins for CI
 ## Summary
 * Google Cloud GKE Clusters were used to minimize the cost
 * Helm Charts were used to simplify the deployment of application on Kubernetes Clusters
-* Another automated way was used to deploy applicaiton and CI/CD was implemented
+* Another automated way was used to deploy application and CI/CD was implemented
 * Jenkins was used for CI to build the artifact and push it to docker hub
 * ArgoCD and GitOps methodology was used for CD process and application was deployed in automated fashion directly on Kubernetes Clusters
 
